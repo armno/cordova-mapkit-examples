@@ -17,6 +17,10 @@ you can also search for the plugin (in case plugin's id changed for any reason)
 $ cordova plugin search mapkit
 ```
 
+### screenshot
+
+![cordova-ios-mapkit](https://raw.github.com/armno/cordova-mapkit-examples/master/screenshots/ios-iphone4.png)
+
 ### License
 
 MIT &copy; Armno P.
