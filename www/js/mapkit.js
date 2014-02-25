@@ -12,7 +12,7 @@
 			lon: -123.104446
 		};
 
-        this.mapType = {
+		this.mapType = {
             MAP_TYPE_NONE: 0, //No base map tiles.
             MAP_TYPE_NORMAL: 1, //Basic maps.
             MAP_TYPE_SATELLITE: 2, //Satellite maps with no labels.

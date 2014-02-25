@@ -17,15 +17,50 @@
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/mapkit.js"></script>
         <script type="text/javascript">
-//            app.initialize();
 				(function() {
+					var success = function() {
+						var pins = [
+								{
+										lat: 49.28115,
+										lon: -123.10450,
+										title: "A Cool Title",
+										snippet: "A Really Cool Snippet",
+										icon: mapKit.iconColors.HUE_ROSE
+								},
+								{
+										lat: 49.27503,
+										lon: -123.12138,
+										title: "A Cool Title, with no Snippet",
+										icon: {
+											type: "asset",
+											resource: "www/img/logo.png", //an image in the asset directory
+											pinColor: mapKit.iconColors.HUE_VIOLET //iOS only
+										}
+								},
+								{
+										lat: 49.28286,
+										lon: -123.11891,
+										title: "Awesome Title",
+										snippet: "Awesome Snippet",
+										icon: mapKit.iconColors.HUE_GREEN
+								}
+						];
+						mapKit.addMapPins(pins, function() {
+								console.log('added map pins');
+							}, function() {
+								console.log("error adding pins");
+							});
+					};
+
+					var error = function() {
+						console.log('error');
+					};
+
 					document.addEventListener('deviceready', function() {
-							console.log('device is ready');
-							console.log(typeof mapkit);
-							console.log(mapkit);
-						});
+						mapKit.showMap(success, error);
+					});
 				})();
         </script>
     </body>
