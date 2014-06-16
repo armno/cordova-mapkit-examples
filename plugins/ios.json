@@ -1,1 +1,36 @@
-{"prepare_queue":{"installed":[],"uninstalled":[]},"config_munge":{"framework":{"MapKit.framework":{"false":1}},"config.xml":{"/widget":{"<feature name=\"MapKit\"><param name=\"ios-package\" value=\"MapKitView\" /></feature>":1}}},"installed_plugins":{"com.phonegap.plugins.mapkit":{"PACKAGE_NAME":"com.example.mapkittest"}},"dependent_plugins":{}}
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "MapKit.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"MapKit\"><param name=\"ios-package\" value=\"MapKitView\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.mapkit": {
+            "PACKAGE_NAME": "com.example.mapkittest"
+        }
+    },
+    "dependent_plugins": {}
+}
